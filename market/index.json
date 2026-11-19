@@ -1,0 +1,40 @@
+{
+  "format": 1,
+  "title": {
+    "en": "xrz1411 plugins",
+    "zh": "xrz1411 插件索引"
+  },
+  "plugins": [
+    {
+      "name": "@local/session-attachments",
+      "title": {
+        "en": "Session attachments",
+        "zh": "会话附件"
+      },
+      "description": {
+        "en": "Attach another conversation to your draft as context.",
+        "zh": "通过拖放、粘贴会话 ID 或在附件菜单选择，把另一段对话作为上下文发送。"
+      },
+      "author": "xrz1411",
+      "icon": "../icon.svg",
+      "homepage": "https://github.com/xrz1411/dsh-session-attachments",
+      "repository": {
+        "url": "https://github.com/xrz1411/dsh-session-attachments"
+      },
+      "versions": [
+        {
+          "version": "1.2.1",
+          "publishTimestamp": 1795098446,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/xrz1411/dsh-session-attachments",
+            "commit": "ae9cd4958ba29a14e455e7c399905f41730ab57e"
+          },
+          "engines": {
+            "dsh": "0.2.2-rc.5"
+          }
+        }
+      ]
+    }
+  ]
+}
