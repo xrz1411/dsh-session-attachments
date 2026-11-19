@@ -1,0 +1,14 @@
+{
+  "name": "@local/session-attachments",
+  "version": "1.2.1",
+  "description": "Attach session references from the sidebar, clipboard or composer.",
+  "private": true,
+  "type": "module",
+  "exports": {".": "./index.js", "./client": "./client.js", "./locale/*.json": "./locale/*.json", "./icon": "./icon.svg"},
+  "files": ["index.js", "client.js", "cordis.patch.yml", "locale/*.json", "icon.svg", "README.md"],
+  "scripts": {"build": "node build.mjs", "test": "node --test"},
+  "dsh": {
+    "bundle": {"patch": "./cordis.patch.yml"},
+    "client": {"platform": "web", "immediately": true, "inject": ["@deepseek-ai/dsh-client-ui-conversation", "@deepseek-ai/dsh-client-ui-reference", "@deepseek-ai/dsh-client-ui-sidebar", "@deepseek-ai/dsh-client-ui-commands", "@deepseek-ai/dsh-client-ui-attachment", "@deepseek-ai/dsh-client-ui-context-menu", "@deepseek-ai/dsh-client-ui-layout"]}
+  }
+}
